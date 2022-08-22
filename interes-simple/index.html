@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate simple interest</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- IMPORT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+</head>
+
+<body>
+    <main>
+        <div class="phone-container">
+            <div class="microphone">
+                <span class="material-symbols-outlined microphone__icon">
+                    mic
+                </span>
+            </div>
+
+            <div class="result">
+                <div class="question">
+                    <p id="question1" class="question__item question__item--1">
+                        ¿Cuánto es la capital? <br>
+                        <span class="question__example">Ejm: S/. 2500</span>
+                    </p>
+                    <p id="question2" class="question__item question__item--2 hide">
+                        ¿Cuánto es la tasa de interés? <br>
+                        <span class="question__example">Ejm: 5%</span>
+                    </p>
+                    <p id="question3" class="question__item question__item--3 hide">
+                        ¿Cuánto es el tiempo a pagar? <br>
+                        <span class="question__example">Ejm: 12 Meses</span>
+                    </p>
+                </div>
+                <div class="answer">
+                    <p id="user-number"></p>
+                </div>
+            </div>
+
+            <div class="keyboard">
+                <button id="clean-numbers" class="keycaps keycaps--special">AC</button>
+                <button class="keycaps keycaps--special">+/-</button>
+                <button class="keycaps keycaps--special">%</button>
+                <button id="delete-number" class="keycaps keycaps--operation keycaps--backspace">
+                    <span class="material-symbols-outlined">
+                        backspace
+                    </span>
+                </button>
+                <button id="number7" class="keycaps keycaps--number">7</button>
+                <button id="number8" class="keycaps keycaps--number">8</button>
+                <button id="number9" class="keycaps keycaps--number">9</button>
+                <button class="keycaps keycaps--operation">X</button>
+                <button id="number4" class="keycaps keycaps--number">4</button>
+                <button id="number5" class="keycaps keycaps--number">5</button>
+                <button id="number6" class="keycaps keycaps--number">6</button>
+                <button class="keycaps keycaps--operation"> - </button>
+                <button id="number1" class="keycaps keycaps--number">1</button>
+                <button id="number2" class="keycaps keycaps--number">2</button>
+                <button id="number3" class="keycaps keycaps--number">3</button>
+                <button class="keycaps keycaps--operation">+</button>
+                <button id="number0" class="keycaps keycaps--number keycaps--zero">0</button>
+                <button id="point" class="keycaps keycaps--number">.</button>
+                <button id="enter-key" class="keycaps keycaps--operation">
+                    <span class="material-symbols-outlined">
+                        check
+                    </span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
