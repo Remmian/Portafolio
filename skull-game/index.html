@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platzriv - Juego online de carreras y calaveras</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/3ffaa30c0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="game"></canvas>
+
+        <div class="btns">
+            <button id="up"> <i class="fa-solid fa-arrow-up arrow"></i> </button>
+            <button id="left"> <i class="fa-solid fa-arrow-left arrow"></i> </button>
+            <button id="right"> <i class="fa-solid fa-arrow-right arrow"></i> </button>
+            <button id="down"> <i class="fa-solid fa-arrow-down arrow"></i> </button>
+        </div>
+
+        <div class="messages">
+            <!-- TODO -->
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo: ⏰ <span id="time"></span> milisegundos.</p>
+            <p>Record: 🏆 <span id="record"></span> milisegundos.</p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="./assets/js/maps.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
