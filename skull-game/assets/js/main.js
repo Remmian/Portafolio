@@ -39,10 +39,11 @@ function setCanvasSize() {
         canvasSize = window.innerHeight * 0.8;
     }
 
+    canvasSize = Math.floor(canvasSize);
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
 
-    elementsSize = canvasSize / 10;
+    elementsSize = Math.floor(canvasSize / 10);
 
     startGame();
 }
@@ -186,11 +187,6 @@ function showTime() {
     spanTime.innerHTML = currentRecord;
 }
 
-// function showRecord() {
-//     const newRecord = localStorage.getItem("player");
-//     spanRecord.innerHTML = newRecord;
-// }
-
 window.addEventListener('keydown', moveByKeys);
 btnUp.addEventListener('click', moveUp);
 btnLeft.addEventListener('click', moveLeft);
@@ -205,41 +201,25 @@ function moveByKeys(event) {
 }
 function moveUp() {
     const limit = playerPosition.y - elementsSize;
-    if (limit < 0) {
+
+    if (limit < elementsSize) {
         console.log("Te pasaste del límite");
     }
     else {
         playerPosition.y -= elementsSize;
         startGame();
     }
-
-    // if ((playerPosition.y - elementsSize) < elementsSize) {
-    //     console.log('OUT');
-    // } else {
-    //     playerPosition.y -= elementsSize;
-    //     startGame();
-    // }
-    // playerPosition.y -= elementsSize;
-    // startGame();
 }
 function moveLeft() {
-    const limit = playerPosition.x - elementsSize;
-    if (limit <= 0) {
+    const limit = Math.floor(playerPosition.x - elementsSize);
+
+    if (limit < elementsSize) {
         console.log("Te pasaste del límite");
     }
     else {
         playerPosition.x -= elementsSize;
         startGame();
     }
-
-    // if ((playerPosition.x - elementsSize) < elementsSize) {
-    //     console.log('OUT');
-    // } else {
-    //     playerPosition.x -= elementsSize;
-    //     startGame();
-    // }
-    // playerPosition.x -= elementsSize;
-    // startGame();
 }
 function moveRight() {
     if ((playerPosition.x + elementsSize) > canvasSize) {
