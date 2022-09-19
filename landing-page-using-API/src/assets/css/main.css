@@ -1,0 +1,48 @@
+.ytvideos-content {
+    background-color: #100720;
+}
+
+.iconpage {
+    color: rgb(192, 185, 185);
+}
+
+.main__title {
+    color: white !important;
+}
+
+.content-description__title {
+    color: white;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 16px;
+    padding: 12px;
+
+    background: rgba(161, 157, 157, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.socialmedia__title {
+    color: #182747;
+}
+
+.socialmedia__icon {
+    width: 45px;
+    height: 45px;
+}
+
+.socialmedia__icon--yt {
+    color: red;
+}
+
+.socialmedia__icon--ig {
+    color: #e1306c;
+}
